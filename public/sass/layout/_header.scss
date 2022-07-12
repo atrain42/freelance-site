@@ -1,0 +1,50 @@
+.header {
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(25, 25, 25);
+    position: relative;
+    z-index: 1;
+
+    & h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+}
+
+// #shine {
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 4.5rem;
+//     font-weight: 500;
+//     color: rgb(36, 240, 138);
+//     font-style: italic;
+
+// }
+
+// .arrow {
+//     width: 300px;
+//     height: 50px;
+// }
+
+// #arrow-btn {
+//     position: absolute;
+//     background-color: transparent;
+//     top: 60%;
+//     left: 5%;
+//     border: none;
+//     box-shadow: none;
+
+    
+// }
+
+// #left-arrow {
+//     color: red;
+//     font-size: 3rem;
+//     cursor: pointer;
+//     transition: all 0.5s;
+
+//     &:hover {
+//         font-size: 5rem;
+//     }
+
+// }

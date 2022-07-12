@@ -1,0 +1,85 @@
+.hamburger-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(227, 227, 227);
+    padding: 20rem 0rem;
+    // padding-left: 35rem;
+    // padding-right: 35rem;
+    display: flex;
+    justify-content: center;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(212, 212, 212);
+    height: 100vh;
+    width: 100vw;
+    clip-path: circle(275px at 84% 15%);
+}
+
+.anchor-bin {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    & a {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: rgb(25, 25, 25);
+        text-decoration: none;
+        font-size: 6rem;
+        margin-bottom: 4rem;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.hamburger-info {
+    margin-left: 10rem;
+    z-index: 2;
+    position: relative;
+
+    &__content {
+        &:nth-child(1) {
+            margin-bottom: 8rem;
+        }
+        & h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: rgb(25, 25, 25);
+            font-size: 2.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        & p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: rgb(25, 25, 25);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}
+
+#title {
+    position: absolute;
+    top: 7.5%;
+    left: 12.5%;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: rgb(25, 25, 25);
+}
+
+.hide-menu {
+    display: none;
+}

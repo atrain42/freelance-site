@@ -1,0 +1,39 @@
+.carousel-container {
+    width: 60%;
+    height: 55rem;
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+}
+
+// .slide {
+//     position: relative;
+//     height: 55rem;
+//     width: 120rem;
+// }
+
+.slide-one {
+    background-image: url(/img/laptop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-two {
+    background-image: url(/img/plant1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.slide-three {
+    background-image: url(/img/plant2.jpg);
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@200;300;400;500;600&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background-color: rgb(25, 25, 25);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 5;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 2.25rem;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* About Section */
+.icon__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon__container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon__container-item h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 3.5rem;
+  margin: 3rem 0;
+}
+.icon__container-item p {
+  width: 25vw;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+  text-align: center;
+  color: rgb(90, 90, 90);
+}
+
+#about-img {
+  height: 15rem;
+  width: 15rem;
+}
+
+.experience {
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+}
+.experience-text {
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience-text h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: rgb(25, 25, 25);
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+.experience-text p {
+  width: 60vw;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgb(90, 90, 90);
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.image-container {
+  width: 100vw;
+  height: 55rem;
+  background-image: url(/img/road.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 100vw;
+  height: 70vh;
+  background-color: rgb(25, 25, 25);
+  position: relative;
+  z-index: 1;
+}
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.services {
+  width: 100vw;
+  padding: 20rem 10rem;
+  padding-top: 25rem;
+  padding-bottom: 15rem;
+}
+.services h1 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 6rem;
+  margin-bottom: 15rem;
+}
+
+.values {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  padding: 10rem 10rem;
+}
+
+.text-container {
+  width: 50vw;
+}
+.text-container h1 {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(227, 227, 227);
+  margin-bottom: 3rem;
+}
+
+.value-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+}
+.value-container__item h1 {
+  color: rgb(227, 227, 227);
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+}
+.value-container__item p {
+  color: rgb(164, 164, 164);
+  font-size: 1.75rem;
+  font-family: "Raleway", sans-serif;
+  width: 40rem;
+}
+
+#thinking {
+  height: 30rem;
+  width: auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.footer {
+  width: 100vw;
+  height: 80vh;
+  background-color: white;
+  border-top: 2px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hide the images by default */
+.mySlides {
+  position: relative;
+  height: 55rem;
+  width: 120rem;
+}
+
+.slide-one {
+  background-image: url(/img/laptop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-two {
+  background-image: url(/img/plant1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-three {
+  background-image: url(/img/plant2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  transition: all 1.5s ease-in-out;
+}
+
+.text-box {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.text-box h1 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 6rem;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hamburger-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(227, 227, 227);
+  padding: 20rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(212, 212, 212);
+  height: 100vh;
+  width: 100vw;
+  clip-path: circle(275px at 84% 15%);
+}
+
+.anchor-bin {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+.anchor-bin a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: rgb(25, 25, 25);
+  text-decoration: none;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+.anchor-bin a:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.hamburger-info {
+  margin-left: 10rem;
+  z-index: 2;
+  position: relative;
+}
+.hamburger-info__content:nth-child(1) {
+  margin-bottom: 8rem;
+}
+.hamburger-info__content h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: rgb(25, 25, 25);
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+.hamburger-info__content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#title {
+  position: absolute;
+  top: 7.5%;
+  left: 12.5%;
+  font-family: "Inter", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+}
+
+.hide-menu {
+  display: none;
+}
+
+.process {
+  height: 75vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: rgb(25, 25, 25);
+  margin-bottom: 10rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  border: none;
+  width: 20rem;
+  padding: 2rem 2rem;
+  cursor: pointer;
+  z-index: 2;
+  white-space: nowrap;
+  background-color: transparent;
+  text-align: left;
+  font-size: 2.5rem;
+  font-family: "Inter", serif;
+  color: rgb(227, 227, 227);
+}
+
+.operations {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  margin-right: 5rem;
+}
+
+.operations__tab-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.operations__tab {
+  margin-right: 2rem;
+  width: 20rem;
+}
+
+.operations__tab:last-child {
+  margin-right: 0;
+}
+
+.step--1 {
+  color: #eee;
+  transition: all 1s;
+}
+
+.step--2 {
+  color: #eee;
+  transition: all 1s;
+}
+
+.step--3 {
+  color: #eee;
+  transition: all 1s;
+}
+
+.step--4 {
+  color: #eee;
+  transition: all 1s;
+}
+
+.operations__content {
+  display: none;
+  font-size: 1.7rem;
+  z-index: 2;
+}
+.operations__content p {
+  width: 35rem;
+  font-size: 1.75rem;
+  margin-bottom: 1px;
+  font-family: "Inter", serif;
+  line-height: 1.5;
+  color: rgb(227, 227, 227);
+}
+
+.button-container {
+  display: flex;
+}
+.button-container hr {
+  width: 4rem;
+  height: 0.5px;
+  color: rgb(227, 227, 227);
+}
+
+.hide-break {
+  display: none;
+}
+
+.operations__content--active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s;
+  padding-top: 2rem;
+}
+
+.operations__tab--active {
+  border-left: 2px solid rgba(227, 227, 227, 0.577);
+  padding-left: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
